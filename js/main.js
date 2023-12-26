@@ -16,8 +16,8 @@ const material = new THREE.MeshBasicMaterial( { color: 0xFF0000, wireframe: true
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-const geometryPlane = new THREE.PlaneGeometry(10, 10, 1, 1);
-const materialPlane = new THREE.MeshBasicMaterial( {color: 0xBF9000, side: THREE.DoubleSide} );
+const geometryPlane = new THREE.PlaneGeometry(10, 10, 10, 10);
+const materialPlane = new THREE.MeshBasicMaterial( {color: 0xBF9000, side: THREE.DoubleSide, wireframe: true } );
 const plane = new THREE.Mesh( geometryPlane, materialPlane );
 scene.add( plane );
 plane.position.set(0, 0, -5);
